@@ -14,6 +14,10 @@ body {
     margin: 0;
     font-family: Helvetica;
     min-height: 100vh;
+    display: grid;
+    /* they divide the fifths or fourths with grid template colums  or use 20% percentages NOte see flex grow for flex container  */
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr 30px;
 }
 
 /* end reset calibration */
@@ -29,6 +33,7 @@ nav {
 
     /* align-items control the aligment along thw cross axis */
     align-items: center;
+    
 }
 
 
@@ -56,4 +61,10 @@ main {
 
 footer {
     background-color: #a2cbb6;
+}
+/* select two elements */
+
+nav, footer {
+/* grid colom to span */
+grid-column: span 2;
 }
