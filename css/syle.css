@@ -3,29 +3,57 @@
 
 
 * {
-  /* //star selector selects all css in css file  */
-/* height & width now includes border & padding */ 
-  
-  box-sizing: border-box;
-  /* //box sizing takes into account whole page */
+    /* //star selector selects all css in css file  */
+    /* height & width now includes border & padding */
+
+    box-sizing: border-box;
+    /* //box sizing takes into account whole page */
 }
 
 body {
-  margin: 0;
-  font-family: Helvetica;
+    margin: 0;
+    font-family: Helvetica;
+    min-height: 100vh;
 }
 
+/* end reset calibration */
 nav {
-  display: flex;
-  height: 50px;
-  background-color: #a2cbb6;
-  /* change direction with flex-direction : column*/
-  flex-direction: row;
+    /* when adding diplsay flex become a container */
+    display: flex;
+    height: 50px;
+    background-color: #a2cbb6;
+    /* change direction with flex-direction : column*/
+    /* flex-direction: row; */
+    /* spaces evenly */
+    /* justify-content: space-evenly; */
+
+    /* align-items control the aligment along thw cross axis */
+    align-items: center;
 }
+
 
 nav div {
-  font-size: 20px;
-  margin: 10px;
-  color: #f3dba8;
+    font-size: 20px;
+    margin: 10px;
+    color: #f3dba8;
+
 }
-/* // end reset css */
+
+/* direct desendant selector its very specific */
+
+nav>div:last-child {
+    /* adds as much margin to push left */
+    margin-left: auto;
+}
+
+aside {
+    background-color: #a2b4da;
+}
+
+main {
+    background-color: #f3dba8;
+}
+
+footer {
+    background-color: #a2cbb6;
+}
